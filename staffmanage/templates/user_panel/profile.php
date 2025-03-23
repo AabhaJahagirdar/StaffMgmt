@@ -34,7 +34,7 @@
 	<div class="wrapper">
 		<nav id="sidebar" class="sidebar js-sidebar">
 			<div class="sidebar-content js-simplebar">
-				<a class="sidebar-brand" href="../home.php">
+				<a class="sidebar-brand" href="../profile.php">
           <span class="align-middle">Home</span>
         </a>
 
@@ -57,7 +57,7 @@
             </a>
 					</li>
 
-					<li class="sidebar-item">
+					<!-- <li class="sidebar-item">
 						<a class="sidebar-link" href="history.php">
 							<i class="fa fa-history fa-lg" aria-hidden="true"></i> <span class="align-middle">History</span>
             </a>
@@ -85,16 +85,16 @@
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
 								<path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
 							  </svg>
-              <!--<i class="align-middle" data-feather="book"></i> --> <span class="align-middle">Rate Us</span>
+               <span class="align-middle">Rate Us</span>
             </a>
-					</li>
+					</li> 
 
 
 					<li class="sidebar-item">
 						<a class="sidebar-link" href="termsandconditions.php">
               <i class="align-middle" data-feather="book"></i> <span class="align-middle">Terms and Conditions</span>
             </a>
-					</li>
+					</li>-->
 				<div class="sidebar-cta">
 				</div>
 			</div>
@@ -109,7 +109,7 @@
 				<div class="navbar-collapse collapse">
 					<ul class="navbar-nav navbar-align">
 						<li class="nav-item dropdown">
-							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+							<!-- <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
 								<div class="position-relative">
 									<i class="align-middle" data-feather="bell"></i>
 									<span class="indicator">4</span>
@@ -243,17 +243,17 @@
 						<li class="nav-item dropdown">
 							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
                 <i class="align-middle" data-feather="settings"></i>
-              </a>
+              </a> -->
 
 							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
                 <img src="..\..\asset\img_user\avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">Charles Hall</span>
               </a>
 							<div class="dropdown-menu dropdown-menu-end">
 								<a class="dropdown-item" href="profile.php"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
-								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
+								<!-- <a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="index.php"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
-								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a> -->
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="../home.php">Log out</a>
 							</div>
@@ -276,8 +276,8 @@
           <div class="list-group list-group-flush account-settings-links">
             <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-general">General</a>
             <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-change-password">Change password</a>
-            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-info">Info</a>
-            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-social-links">Social links</a>
+            <!-- <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-info">Info</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-social-links">Social links</a> -->
           </div>
         </div>
         <div class="col-md-9">
@@ -299,26 +299,27 @@
               <hr class="border-light m-0">
 
               <div class="card-body">
-                <div class="form-group">
-                  <label class="form-label">Username</label>
-                  <input type="text" class="form-control mb-1" value="Enter Username">
+			  <div class="form-group">
+                  <label class="form-label">Unique ID</label>
+                  <input type="text" class="form-control" placeholder="Enter your teacher ID" required>
                 </div>
                 <div class="form-group">
                   <label class="form-label">Name</label>
-                  <input type="text" class="form-control" value="Enter full name">
+                  <input type="text" class="form-control" placeholder="Enter full name( Name Middle name Surname)" required>
                 </div>
                 <div class="form-group">
                   <label class="form-label">E-mail</label>
-                  <input type="text" class="form-control mb-1" value="Enter email address">
+                  <input type="text" class="form-control mb-1" placeholder="Enter email address" required>
                   <div class="alert alert-warning mt-3">
                     Your email is not confirmed. Please check your inbox.<br>
                     <a href="javascript:void(0)">Resend confirmation</a>
                   </div>
                 </div>
-                <div class="form-group">
-                  <label class="form-label">Company</label>
-                  <input type="text" class="form-control" value="Company Ltd.">
+				<div class="form-group">
+                  <label class="form-label">Phone Number</label>
+                  <input type="number" class="form-control mb-1" placeholder="Enter your phone number" required>
                 </div>
+                
               </div>
 
             </div>

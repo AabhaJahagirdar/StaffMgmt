@@ -23,7 +23,7 @@
   <button onclick="go_home()" id="home-btn"  class="home-btn"><i class="material-icons">keyboard_arrow_left</i></button>
   <script>
     function go_home(){
-      window.location.href = "home.php";
+      window.location.href = "#";
     }
    
   </script>
